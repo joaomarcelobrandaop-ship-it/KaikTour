@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- PRÉVIA de prospecção (noindex). Botões no WhatsApp DO DONO. Gerado por build_site.py, não editar à mão. -->
+<meta name="robots" content="noindex, nofollow">
+<title>Passeio privativo em Arraial, Trancoso, Espelho e Caraíva | Kaik Tour</title>
+<meta name="description" content="Arraial d&#x27;Ajuda, Trancoso, Praia do Espelho, Caraíva e Jacumã com carro e guia só para o seu grupo, saindo do hotel.">
+<meta name="theme-color" content="#1F2A6B">
+<link rel="preload" href="fontes/anybody.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fontes/schibsted-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Anybody';src:url(fontes/anybody.woff2) format('woff2');font-weight:100 900;font-stretch:50% 150%;font-display:swap}
+@font-face{font-family:'Schibsted Grotesk';src:url(fontes/schibsted-grotesk.woff2) format('woff2');font-weight:400 900;font-display:swap}
+:root{
+  --anil:#1F2A6B; --anil2:#18215A; --anil3:#283580;
+  --tinta-clara:#F3EFE6; --tinta-suave:#C9CDE6; --tinta-escura:#1B1712;
+  --amarela:#F2C230; --azul:#4FB3E0; --rosa:#E86FA8; --verde:#3DAA62; --vermelha:#E8553A;
+  --fita:var(--amarela);
+  --f-titulo:'Anybody',system-ui,sans-serif; --f-texto:'Schibsted Grotesk',system-ui,sans-serif;
+  --raio:14px; --curva:cubic-bezier(.23,1,.32,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:80px;overflow-x:clip}
+body{margin:0;background:var(--anil);color:var(--tinta-clara);font-family:var(--f-texto);font-size:17px;line-height:1.55;overflow-x:clip}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:var(--f-titulo);font-stretch:125%;font-weight:900;line-height:1.04;letter-spacing:-.015em;margin:0;text-wrap:balance;overflow-wrap:break-word}
+p{margin:0}
+.wrap{width:min(1180px,100% - 32px);margin-inline:auto}
+:focus-visible{outline:3px solid var(--fita);outline-offset:3px;border-radius:6px}
+/* P1 da auditoria (06/11): sobre fundo da cor da fita, o contorno da cor da fita sumia */
+.ph :focus-visible,.nota-fita :focus-visible{outline-color:var(--tinta-escura)}
+.pular{position:absolute;left:-999px;top:8px;background:var(--amarela);color:var(--tinta-escura);padding:10px 16px;border-radius:10px;z-index:99}
+.pular:focus{left:8px}
+
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:50px;padding:0 24px;border-radius:999px;background:var(--fita);color:var(--tinta-escura);
+  font-weight:700;font-size:16.5px;text-decoration:none;white-space:nowrap;transition:transform .16s var(--curva),filter .16s ease}
+.btn svg{width:21px;height:21px;flex:none}
+.btn:active{transform:scale(.97)}
+@media (hover:hover) and (pointer:fine){.btn:hover{filter:brightness(1.07)}}
+
+/* cabeçalho */
+.topo{position:sticky;top:0;z-index:20;background:var(--anil)}
+.topo .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px}
+.marca{font-family:var(--f-titulo);font-stretch:125%;font-weight:900;font-size:20px;text-decoration:none;color:var(--tinta-clara);min-height:44px;display:flex;align-items:center;letter-spacing:.01em}
+.menu{display:none;gap:2px;align-items:center}
+.menu a{text-decoration:none;font-weight:600;font-size:15px;padding:0 12px;min-height:44px;display:flex;align-items:center;border-radius:999px;color:var(--tinta-suave)}
+.menu a[aria-current]{color:var(--tinta-escura);background:var(--fita)}
+@media (hover:hover) and (pointer:fine){.menu a:not([aria-current]):hover{color:var(--tinta-clara)}}
+.topo .btn{display:none;min-height:44px;padding:0 18px;font-size:15px}
+.abrir{min-height:44px;padding:0 18px;border:0;border-radius:999px;background:var(--anil3);color:var(--tinta-clara);font:600 15px var(--f-texto);cursor:pointer}
+.gaveta{position:fixed;inset:0;z-index:40;background:var(--anil2);padding:18px 16px 32px;display:flex;flex-direction:column;gap:10px;overflow:auto}
+.gaveta[hidden]{display:none}
+.gaveta .fechar{align-self:flex-end;min-height:44px;padding:0 18px;border:0;border-radius:999px;background:var(--anil3);color:var(--tinta-clara);font:600 15px var(--f-texto);cursor:pointer}
+.gaveta .btn{margin-top:14px;align-self:flex-start}
+@media (min-width:1040px){.menu{display:flex}.topo .btn{display:inline-flex}.abrir{display:none}}
+
+/* fitas */
+.fitas{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.fita{display:flex;justify-content:space-between;align-items:center;gap:14px;min-height:72px;padding:12px 30px 12px 22px;text-decoration:none;color:var(--tinta-escura);
+  background:var(--c);clip-path:polygon(0 0,100% 0,calc(100% - 18px) 50%,100% 100%,0 100%);transform:rotate(-1deg);transition:transform .22s var(--curva)}
+.fitas li:nth-child(even) .fita{clip-path:polygon(0 0,100% 0,100% 100%,0 100%,18px 50%);padding:12px 22px 12px 38px;transform:rotate(.8deg)}
+.fita b{display:block;font-family:var(--f-titulo);font-stretch:118%;font-weight:800;font-size:21px;line-height:1.1}
+.fita span{display:block;font-size:15px;font-weight:500;margin-top:3px}
+.fita svg{width:24px;height:24px;flex:none}
+.fita:focus-visible{outline:3px solid var(--tinta-clara);outline-offset:4px}
+@media (hover:hover) and (pointer:fine){.fita:hover,.fitas li:nth-child(even) .fita:hover{transform:rotate(0)}}
+
+/* hero da home */
+.hero{padding:22px 0 46px}
+.hero .wrap{display:grid;gap:28px}
+.hero h1{font-size:clamp(38px,9.4vw,72px)}
+.hero p{font-size:clamp(17px,2vw,19.5px);color:var(--tinta-suave);max-width:30em;margin:16px 0 24px}
+.hero-foto{border-radius:var(--raio);overflow:hidden;aspect-ratio:4/3.4}
+.hero-foto img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+@media (min-width:960px){.hero{padding:56px 0 72px}.hero .wrap{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:56px;align-items:center}.hero-foto{aspect-ratio:4/4.4}}
+
+.sec{padding:64px 0}
+.sec-2{background:var(--anil2)}
+.sec h2{font-size:clamp(28px,6vw,46px)}
+.sec .intro{font-size:17.5px;color:var(--tinta-suave);max-width:34em;margin-top:12px}
+.sec .fitas{margin-top:30px}
+
+/* como funciona */
+.como{list-style:none;margin:30px 0 0;padding:0;display:grid;gap:26px}
+.como li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:16px;align-items:start}
+.como svg{width:40px;height:40px;color:var(--amarela)}
+.como b{display:block;font-family:var(--f-titulo);font-stretch:118%;font-weight:800;font-size:19px;margin-bottom:4px}
+.como span{color:var(--tinta-suave)}
+@media (min-width:820px){.como{grid-template-columns:repeat(3,minmax(0,1fr));gap:36px}}
+
+/* nota: a fita amarela do Google */
+.nota-sec{padding:72px 0 80px}
+.nota-fita{position:relative;display:grid;gap:22px;align-items:center;background:var(--amarela);color:var(--tinta-escura);
+  padding:34px 34px 38px;transform:rotate(-1.4deg);clip-path:polygon(0 0,100% 0,calc(100% - 28px) 50%,100% 100%,0 100%,28px 50%)}
+.nota-fita > *{transform:rotate(1.4deg)}
+.nota-num{font-family:var(--f-titulo);font-stretch:150%;font-weight:900;font-size:clamp(72px,17vw,132px);line-height:.85;letter-spacing:-.03em;padding-left:18px}
+.estrelas{display:flex;gap:4px;margin-bottom:10px}
+.estrelas svg{width:26px;height:26px;color:var(--tinta-escura)}
+.nota-fita p{font-size:18px;max-width:28em}
+.nota-fita p b{font-family:var(--f-titulo);font-stretch:118%;font-weight:800}
+.nota-fita .btn{background:var(--tinta-escura);color:var(--amarela);margin-top:16px}
+@media (min-width:860px){.nota-fita{grid-template-columns:auto minmax(0,1fr);gap:56px;padding:44px 70px 48px}}
+@media (prefers-reduced-motion:reduce){.nota-fita,.nota-fita > *{transform:none}}
+
+/* perguntas */
+.perg{margin-top:26px;border-top:1.5px solid rgba(201,205,230,.25)}
+.perg details{border-bottom:1.5px solid rgba(201,205,230,.25)}
+.perg summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:14px;min-height:64px;padding:12px 2px;font-weight:700;font-size:17.5px}
+.perg summary::-webkit-details-marker{display:none}
+.perg summary::after{content:"+";font-family:var(--f-titulo);font-size:26px;color:var(--amarela);flex:none;transition:transform .2s var(--curva)}
+.perg details[open] summary::after{transform:rotate(45deg)}
+.perg details p{padding:0 2px 18px;color:var(--tinta-suave);max-width:40em}
+.fim h2{max-width:13em}
+.fim p{color:var(--tinta-suave);margin:14px 0 24px;max-width:32em;font-size:17.5px}
+
+/* topo das páginas internas: a faixa na cor da fita */
+.ph{background:var(--fita);color:var(--tinta-escura);padding:34px 0 52px;clip-path:polygon(0 0,100% 0,100% 100%,52% calc(100% - 22px),0 100%)}
+.ph .trilha{font-size:15px;font-weight:600;margin-bottom:10px}
+.ph .trilha a{min-height:44px;display:inline-flex;align-items:center}
+.ph h1{font-size:clamp(34px,8vw,62px)}
+.ph p{font-size:18px;max-width:34em;margin:14px 0 20px}
+.ph-lista{display:flex;flex-wrap:wrap;gap:8px}
+.ph-lista a{min-height:44px;display:inline-flex;align-items:center;padding:0 16px;border-radius:999px;background:var(--tinta-escura);color:var(--fita);text-decoration:none;font-weight:700;font-size:15px}
+
+/* bloco de passeio */
+.ps{padding:56px 0}
+.ps:nth-of-type(even){background:var(--anil2)}
+.ps-grid{display:grid;gap:26px}
+.ps-foto{border-radius:var(--raio);overflow:hidden;aspect-ratio:4/5;max-height:620px}
+.ps-foto img{width:100%;height:100%;object-fit:cover}
+.ps-cartao{border-radius:var(--raio);aspect-ratio:4/5;max-height:620px;background:var(--fita);color:var(--tinta-escura);display:flex;flex-direction:column;justify-content:flex-end;gap:6px;padding:30px}
+.ps-cartao b{font-family:var(--f-titulo);font-stretch:118%;font-weight:800;font-size:26px;line-height:1.15}
+.ps h2{font-size:clamp(26px,5.6vw,44px);hyphens:manual}
+@media (min-width:960px){.ps h2{font-size:clamp(30px,3.3vw,44px)}}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 18px;padding:0;list-style:none}
+.chips li{font-weight:700;font-size:15px;padding:7px 14px;border-radius:999px;background:var(--fita);color:var(--tinta-escura)}
+.ps .txt{font-size:17.5px;color:var(--tinta-suave);max-width:34em}
+.inc{display:grid;gap:18px;margin:22px 0 26px}
+.inc h3{font-family:var(--f-texto);font-weight:700;font-size:16px;letter-spacing:0;margin-bottom:6px}
+.inc ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.inc li{display:grid;grid-template-columns:22px minmax(0,1fr);gap:8px;align-items:start;font-size:16.5px}
+.inc svg{width:20px;height:20px;margin-top:3px}
+.sim svg{color:var(--fita)}
+.nao svg{color:var(--tinta-suave)}
+.aviso{font-size:16.5px;background:var(--anil3);border-radius:var(--raio);padding:16px 18px;margin-bottom:24px;max-width:34em}
+@media (min-width:700px){.inc{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+@media (min-width:960px){.ps-grid{grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:60px;align-items:center}.ps:nth-of-type(even) .ps-grid>:first-child{order:2}}
+
+/* aventura */
+.dia{list-style:none;margin:26px 0 0;padding:0;display:grid;gap:18px}
+.dia li{display:grid;grid-template-columns:minmax(0,9rem) minmax(0,1fr);gap:16px;padding-bottom:16px;border-bottom:1.5px solid rgba(201,205,230,.2)}
+.dia b{font-family:var(--f-titulo);font-stretch:118%;font-weight:800;font-size:18px;color:var(--fita)}
+.dia span{color:var(--tinta-suave)}
+.galeria{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px;margin-top:30px}
+.galeria div{border-radius:var(--raio);overflow:hidden;aspect-ratio:4/5}
+.galeria img{width:100%;height:100%;object-fit:cover}
+
+/* rodapé */
+.rodape{background:var(--anil2);padding:48px 0 40px;color:var(--tinta-suave);font-size:16px}
+.rodape .wrap{display:grid;gap:28px}
+.rodape h2{font-family:var(--f-texto);font-size:15px;font-weight:700;letter-spacing:0;color:var(--tinta-clara);margin-bottom:8px}
+.rodape ul{list-style:none;margin:0;padding:0}
+.rodape li a{min-height:44px;display:inline-flex;align-items:center;text-decoration:none}
+@media (hover:hover) and (pointer:fine){.rodape li a:hover{color:var(--tinta-clara);text-decoration:underline}}
+@media (min-width:860px){.rodape .wrap{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) minmax(0,1fr)}}
+
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}.fita,.fitas li:nth-child(even) .fita{transform:none}}
+:root{--fita:#F2C230}</style>
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<header class="topo">
+  <div class="wrap">
+    <a class="marca" href="index.html">KAIK TOUR</a>
+    <nav class="menu" aria-label="Principal"><a href="index.html">Início</a><a href="praias-e-vilarejos.html" aria-current="page">Praias e vilarejos</a><a href="passeios-no-mar.html">No mar</a><a href="cultura-e-historia.html">Cultura</a><a href="aventura.html">Aventura</a><a href="roteiros-combinados.html">Combinados</a></nav>
+    <a class="btn" href="https://wa.me/5573988477235?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Kaik%20Tour%20e%20quero%20reservar%20um%20passeio.%20Data%3A%20__%20/%20Pessoas%3A%20__" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.9 9.9 0 0 0 12.04 2zm5.8 14.06c-.24.68-1.42 1.3-1.95 1.35-.5.05-.98.23-3.3-.69-2.78-1.1-4.55-3.95-4.69-4.13-.14-.18-1.12-1.49-1.12-2.85s.71-2.02.97-2.3c.25-.27.55-.34.73-.34h.53c.17 0 .4-.06.62.48.24.56.8 1.94.87 2.08.07.14.12.3.02.48-.1.18-.14.3-.28.46-.14.16-.29.36-.42.48-.14.14-.28.29-.12.57.16.27.72 1.19 1.55 1.93 1.07.95 1.97 1.25 2.25 1.39.27.14.44.12.6-.07.16-.18.69-.8.87-1.08.18-.27.37-.23.62-.14.25.09 1.6.76 1.88.9.27.14.46.2.53.32.07.12.07.68-.17 1.36z"/></svg><span>Reservar</span></a>
+    <button class="abrir" type="button" aria-expanded="false" aria-controls="gaveta">Menu</button>
+  </div>
+</header>
+<div class="gaveta" id="gaveta" role="dialog" aria-modal="true" aria-label="Menu" hidden>
+  <button class="fechar" type="button">Fechar</button>
+  <a class="marca" href="index.html">Início</a>
+  <ul class="fitas"><li><a class="fita" href="praias-e-vilarejos.html" style="--c:#F2C230"><span><b>Praias e vilarejos</b><span>Arraial d&#x27;Ajuda, Trancoso, Praia do Espelho, Caraíva, Praia de Jacumã, Arraial à noite</span></span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li><li><a class="fita" href="passeios-no-mar.html" style="--c:#4FB3E0"><span><b>No mar</b><span>Recife de Fora, Praia do Espelho e Poço Azul</span></span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li><li><a class="fita" href="cultura-e-historia.html" style="--c:#E86FA8"><span><b>Cultura e história</b><span>Reserva da Jaqueira, Rota do Descobrimento</span></span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li><li><a class="fita" href="aventura.html" style="--c:#3DAA62"><span><b>Aventura</b><span>Trancoso Off-Road</span></span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li><li><a class="fita" href="roteiros-combinados.html" style="--c:#E8553A"><span><b>Três lugares num dia</b><span>Litoral Sul num dia, Espelho e Trancoso</span></span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li></ul>
+  <a class="btn" href="https://wa.me/5573988477235?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Kaik%20Tour%20e%20quero%20saber%20dos%20passeios." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.9 9.9 0 0 0 12.04 2zm5.8 14.06c-.24.68-1.42 1.3-1.95 1.35-.5.05-.98.23-3.3-.69-2.78-1.1-4.55-3.95-4.69-4.13-.14-.18-1.12-1.49-1.12-2.85s.71-2.02.97-2.3c.25-.27.55-.34.73-.34h.53c.17 0 .4-.06.62.48.24.56.8 1.94.87 2.08.07.14.12.3.02.48-.1.18-.14.3-.28.46-.14.16-.29.36-.42.48-.14.14-.28.29-.12.57.16.27.72 1.19 1.55 1.93 1.07.95 1.97 1.25 2.25 1.39.27.14.44.12.6-.07.16-.18.69-.8.87-1.08.18-.27.37-.23.62-.14.25.09 1.6.76 1.88.9.27.14.46.2.53.32.07.12.07.68-.17 1.36z"/></svg><span>Falar no WhatsApp</span></a>
+</div>
+<main id="conteudo">
+<section class="ph"><div class="wrap">
+  <p class="trilha"><a href="index.html">Início</a> › Praias e vilarejos</p>
+  <h1>Praias e vilarejos</h1>
+  <p>Um lugar por dia, com carro e guia só para o seu grupo. A balsa já está paga quando o caminho passa por ela.</p>
+  <div class="ph-lista"><a href="#arraial">Arraial d&#x27;Ajuda</a><a href="#trancoso">Trancoso</a><a href="#espelho">Praia do Espelho</a><a href="#caraiva">Caraíva</a><a href="#jacuma">Praia de Jacumã</a><a href="#arraial-noite">Arraial à noite</a></div>
+</div></section><section class="ps" id="arraial"><div class="wrap ps-grid">
+  <div class="ps-foto"><img src="img/arraial-familia-600.webp" srcset="img/arraial-familia-400.webp 400w, img/arraial-familia-600.webp 600w, img/arraial-familia-800.webp 800w, img/arraial-familia-1200.webp 1200w" sizes="(min-width:960px) 45vw, 92vw" width="600" height="750" alt="Família de seis pessoas com os braços para cima na frente da igreja de Arraial d&#x27;Ajuda" loading="lazy" decoding="async"></div>
+  <div>
+    <h2>Arraial d&#x27;Ajuda</h2>
+    <ul class="chips"><li>Saída entre 7h30 e 7h45</li><li>1 h na vila</li><li>4 h na praia</li></ul>
+    <p class="txt">Depois da balsa, uma hora pela vila: a Praça da Igreja, o Mirante das Fitinhas, a Broadway e a Rua do Mucugê, com tempo para as fotos. O resto do dia é na Praia do Mucugê.</p>
+    <div class="inc"><div class="sim"><h3>Inclui</h3><ul><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Travessia da balsa</span></li><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Veículo só para o seu grupo</span></li><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Guia de turismo</span></li><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Fotos durante o passeio</span></li></ul></div><div class="nao"><h3>Não inclui</h3><ul><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5.5 5.5l9 9M14.5 5.5l-9 9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span>Alimentação</span></li><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5.5 5.5l9 9M14.5 5.5l-9 9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span>Bebidas</span></li></ul></div></div>
+    
+    <a class="btn" href="https://wa.me/5573988477235?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Kaik%20Tour%20e%20quero%20o%20passeio%20Arraial%20d%27Ajuda.%20Data%3A%20__%20%C2%B7%20Pessoas%3A%20__%20%C2%B7%20Hotel%3A%20__" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.9 9.9 0 0 0 12.04 2zm5.8 14.06c-.24.68-1.42 1.3-1.95 1.35-.5.05-.98.23-3.3-.69-2.78-1.1-4.55-3.95-4.69-4.13-.14-.18-1.12-1.49-1.12-2.85s.71-2.02.97-2.3c.25-.27.55-.34.73-.34h.53c.17 0 .4-.06.62.48.24.56.8 1.94.87 2.08.07.14.12.3.02.48-.1.18-.14.3-.28.46-.14.16-.29.36-.42.48-.14.14-.28.29-.12.57.16.27.72 1.19 1.55 1.93 1.07.95 1.97 1.25 2.25 1.39.27.14.44.12.6-.07.16-.18.69-.8.87-1.08.18-.27.37-.23.62-.14.25.09 1.6.76 1.88.9.27.14.46.2.53.32.07.12.07.68-.17 1.36z"/></svg><span>Consultar uma data</span></a>
+  </div>
+</div></section><section class="ps" id="trancoso"><div class="wrap ps-grid">
+  <div class="ps-foto"><img src="img/trancoso-casa-600.webp" srcset="img/trancoso-casa-400.webp 400w, img/trancoso-casa-600.webp 600w, img/trancoso-casa-800.webp 800w, img/trancoso-casa-1125.webp 1125w" sizes="(min-width:960px) 45vw, 92vw" width="600" height="750" alt="Moça sentada num tronco na frente de uma casa vermelha no Quadrado de Trancoso" loading="lazy" decoding="async"></div>
+  <div>
+    <h2>Trancoso</h2>
+    <ul class="chips"><li>Saída às 7h30</li><li>4 h na Praia dos Coqueiros</li></ul>
+    <p class="txt">O Quadrado de Trancoso, uma parada na Casinha do Pescador e uma caminhada pela praia. A tarde fica para a Praia dos Coqueiros.</p>
+    <div class="inc"><div class="sim"><h3>Inclui</h3><ul><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Travessia da balsa</span></li><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Veículo só para o seu grupo</span></li><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Guia de turismo</span></li><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Fotos durante o passeio</span></li></ul></div><div class="nao"><h3>Não inclui</h3><ul><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5.5 5.5l9 9M14.5 5.5l-9 9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span>Alimentação</span></li><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5.5 5.5l9 9M14.5 5.5l-9 9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span>Bebidas</span></li></ul></div></div>
+    
+    <a class="btn" href="https://wa.me/5573988477235?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Kaik%20Tour%20e%20quero%20o%20passeio%20Trancoso.%20Data%3A%20__%20%C2%B7%20Pessoas%3A%20__%20%C2%B7%20Hotel%3A%20__" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.9 9.9 0 0 0 12.04 2zm5.8 14.06c-.24.68-1.42 1.3-1.95 1.35-.5.05-.98.23-3.3-.69-2.78-1.1-4.55-3.95-4.69-4.13-.14-.18-1.12-1.49-1.12-2.85s.71-2.02.97-2.3c.25-.27.55-.34.73-.34h.53c.17 0 .4-.06.62.48.24.56.8 1.94.87 2.08.07.14.12.3.02.48-.1.18-.14.3-.28.46-.14.16-.29.36-.42.48-.14.14-.28.29-.12.57.16.27.72 1.19 1.55 1.93 1.07.95 1.97 1.25 2.25 1.39.27.14.44.12.6-.07.16-.18.69-.8.87-1.08.18-.27.37-.23.62-.14.25.09 1.6.76 1.88.9.27.14.46.2.53.32.07.12.07.68-.17 1.36z"/></svg><span>Consultar uma data</span></a>
+  </div>
+</div></section><section class="ps" id="espelho"><div class="wrap ps-grid">
+  <div class="ps-foto"><img src="img/espelho-gruta-600.webp" srcset="img/espelho-gruta-400.webp 400w, img/espelho-gruta-600.webp 600w, img/espelho-gruta-800.webp 800w, img/espelho-gruta-1200.webp 1200w" sizes="(min-width:960px) 45vw, 92vw" width="600" height="750" alt="Moça de pé dentro de uma gruta de pedra, olhando o mar da Praia do Espelho" loading="lazy" decoding="async"></div>
+  <div>
+    <h2>Praia do Espelho</h2>
+    <ul class="chips"><li>Saída às 7h30</li><li>2 h de estrada</li><li>4 h na praia</li></ul>
+    <p class="txt">Água clara, falésias coloridas e piscinas naturais quando a maré baixa. A equipe indica um beach club para passar o dia, e quem quiser faz a caminhada até a Pedra Furada.</p>
+    <div class="inc"><div class="sim"><h3>Inclui</h3><ul><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Veículo só para o seu grupo</span></li><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Guia de turismo</span></li><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Fotos durante o passeio</span></li></ul></div><div class="nao"><h3>Não inclui</h3><ul><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5.5 5.5l9 9M14.5 5.5l-9 9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span>Alimentação</span></li><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5.5 5.5l9 9M14.5 5.5l-9 9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span>Bebidas</span></li></ul></div></div>
+    
+    <a class="btn" href="https://wa.me/5573988477235?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Kaik%20Tour%20e%20quero%20o%20passeio%20Praia%20do%20Espelho.%20Data%3A%20__%20%C2%B7%20Pessoas%3A%20__%20%C2%B7%20Hotel%3A%20__" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.9 9.9 0 0 0 12.04 2zm5.8 14.06c-.24.68-1.42 1.3-1.95 1.35-.5.05-.98.23-3.3-.69-2.78-1.1-4.55-3.95-4.69-4.13-.14-.18-1.12-1.49-1.12-2.85s.71-2.02.97-2.3c.25-.27.55-.34.73-.34h.53c.17 0 .4-.06.62.48.24.56.8 1.94.87 2.08.07.14.12.3.02.48-.1.18-.14.3-.28.46-.14.16-.29.36-.42.48-.14.14-.28.29-.12.57.16.27.72 1.19 1.55 1.93 1.07.95 1.97 1.25 2.25 1.39.27.14.44.12.6-.07.16-.18.69-.8.87-1.08.18-.27.37-.23.62-.14.25.09 1.6.76 1.88.9.27.14.46.2.53.32.07.12.07.68-.17 1.36z"/></svg><span>Consultar uma data</span></a>
+  </div>
+</div></section><section class="ps" id="caraiva"><div class="wrap ps-grid">
+  <div class="ps-foto"><img src="img/caraiva-canoa-600.webp" srcset="img/caraiva-canoa-400.webp 400w, img/caraiva-canoa-600.webp 600w, img/caraiva-canoa-800.webp 800w, img/caraiva-canoa-1200.webp 1200w" sizes="(min-width:960px) 45vw, 92vw" width="600" height="750" alt="Moça sentada na canoa Ariaco, no rio de Caraíva, com o mangue ao fundo" loading="lazy" decoding="async"></div>
+  <div>
+    <h2>Caraíva</h2>
+    <ul class="chips"><li>Saída às 7h30</li><li>2h30 de estrada</li><li>4 h na vila</li></ul>
+    <p class="txt">Uma travessia rápida de canoa e você está nas ruas de areia, na frente da Casinha Verde. Depois é escolher: a beira do rio ou a beira-mar, com a opção de conhecer o Cacau.</p>
+    <div class="inc"><div class="sim"><h3>Inclui</h3><ul><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Veículo só para o seu grupo</span></li><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Guia de turismo</span></li><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Balsa, quando o caminho usa</span></li><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Fotos durante o passeio</span></li></ul></div><div class="nao"><h3>Não inclui</h3><ul><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5.5 5.5l9 9M14.5 5.5l-9 9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span>Canoa: R$ 10 por trecho, por pessoa</span></li><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5.5 5.5l9 9M14.5 5.5l-9 9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span>Alimentação</span></li><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5.5 5.5l9 9M14.5 5.5l-9 9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span>Bebidas</span></li></ul></div></div>
+    
+    <a class="btn" href="https://wa.me/5573988477235?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Kaik%20Tour%20e%20quero%20o%20passeio%20Cara%C3%ADva.%20Data%3A%20__%20%C2%B7%20Pessoas%3A%20__%20%C2%B7%20Hotel%3A%20__" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.9 9.9 0 0 0 12.04 2zm5.8 14.06c-.24.68-1.42 1.3-1.95 1.35-.5.05-.98.23-3.3-.69-2.78-1.1-4.55-3.95-4.69-4.13-.14-.18-1.12-1.49-1.12-2.85s.71-2.02.97-2.3c.25-.27.55-.34.73-.34h.53c.17 0 .4-.06.62.48.24.56.8 1.94.87 2.08.07.14.12.3.02.48-.1.18-.14.3-.28.46-.14.16-.29.36-.42.48-.14.14-.28.29-.12.57.16.27.72 1.19 1.55 1.93 1.07.95 1.97 1.25 2.25 1.39.27.14.44.12.6-.07.16-.18.69-.8.87-1.08.18-.27.37-.23.62-.14.25.09 1.6.76 1.88.9.27.14.46.2.53.32.07.12.07.68-.17 1.36z"/></svg><span>Consultar uma data</span></a>
+  </div>
+</div></section><section class="ps" id="jacuma"><div class="wrap ps-grid">
+  <div class="ps-foto"><img src="img/jacuma-barco-600.webp" srcset="img/jacuma-barco-400.webp 400w, img/jacuma-barco-600.webp 600w, img/jacuma-barco-800.webp 800w, img/jacuma-barco-1200.webp 1200w" sizes="(min-width:960px) 45vw, 92vw" width="600" height="750" alt="Moça ajoelhada na água rasa e transparente de Jacumã, com um barco ao fundo" loading="lazy" decoding="async"></div>
+  <div>
+    <h2>Praia de Jacumã</h2>
+    <ul class="chips"><li>Saída às 7h30</li><li>5 h na praia</li></ul>
+    <p class="txt">Falésias, coqueiros e mar verde, numa praia praticamente deserta. Não tem barraca nem comércio, então vale levar água, frutas e uma cesta de piquenique.</p>
+    <div class="inc"><div class="sim"><h3>Inclui</h3><ul><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Veículo só para o seu grupo</span></li><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Guia de turismo</span></li><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Fotos durante o passeio</span></li></ul></div><div class="nao"><h3>Não inclui</h3><ul><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5.5 5.5l9 9M14.5 5.5l-9 9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span>Alimentação</span></li><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5.5 5.5l9 9M14.5 5.5l-9 9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span>Bebidas</span></li></ul></div></div>
+    
+    <a class="btn" href="https://wa.me/5573988477235?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Kaik%20Tour%20e%20quero%20o%20passeio%20Praia%20de%20Jacum%C3%A3.%20Data%3A%20__%20%C2%B7%20Pessoas%3A%20__%20%C2%B7%20Hotel%3A%20__" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.9 9.9 0 0 0 12.04 2zm5.8 14.06c-.24.68-1.42 1.3-1.95 1.35-.5.05-.98.23-3.3-.69-2.78-1.1-4.55-3.95-4.69-4.13-.14-.18-1.12-1.49-1.12-2.85s.71-2.02.97-2.3c.25-.27.55-.34.73-.34h.53c.17 0 .4-.06.62.48.24.56.8 1.94.87 2.08.07.14.12.3.02.48-.1.18-.14.3-.28.46-.14.16-.29.36-.42.48-.14.14-.28.29-.12.57.16.27.72 1.19 1.55 1.93 1.07.95 1.97 1.25 2.25 1.39.27.14.44.12.6-.07.16-.18.69-.8.87-1.08.18-.27.37-.23.62-.14.25.09 1.6.76 1.88.9.27.14.46.2.53.32.07.12.07.68-.17 1.36z"/></svg><span>Consultar uma data</span></a>
+  </div>
+</div></section><section class="ps" id="arraial-noite"><div class="wrap ps-grid">
+  <div class="ps-foto"><img src="img/arraial-noite-600.webp" srcset="img/arraial-noite-400.webp 400w, img/arraial-noite-600.webp 600w, img/arraial-noite-800.webp 800w" sizes="(min-width:960px) 45vw, 92vw" width="600" height="750" alt="Moça de vestido estampado debaixo dos guarda-chuvas coloridos de uma rua de Arraial à noite" loading="lazy" decoding="async"></div>
+  <div>
+    <h2>Arraial à noite</h2>
+    <ul class="chips"><li>Saída entre 16h e 19h30</li><li>Volta por volta da meia-noite</li></ul>
+    <p class="txt">A vila acesa: a Broadway, a Praça da Igreja, o Mirante das Fitinhas e a Rua do Mucugê, com as casas coloridas, as lojas e os restaurantes. Tem tempo livre para jantar e comprar artesanato. O horário de saída é combinado antes.</p>
+    <div class="inc"><div class="sim"><h3>Inclui</h3><ul><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Travessia da balsa</span></li><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Veículo só para o seu grupo</span></li><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Guia de turismo</span></li><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Horário combinado com você</span></li></ul></div><div class="nao"><h3>Não inclui</h3><ul><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5.5 5.5l9 9M14.5 5.5l-9 9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span>Alimentação</span></li><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5.5 5.5l9 9M14.5 5.5l-9 9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span>Bebidas</span></li><li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5.5 5.5l9 9M14.5 5.5l-9 9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span>Compras</span></li></ul></div></div>
+    
+    <a class="btn" href="https://wa.me/5573988477235?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Kaik%20Tour%20e%20quero%20o%20passeio%20Arraial%20%C3%A0%20noite.%20Data%3A%20__%20%C2%B7%20Pessoas%3A%20__%20%C2%B7%20Hotel%3A%20__" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.9 9.9 0 0 0 12.04 2zm5.8 14.06c-.24.68-1.42 1.3-1.95 1.35-.5.05-.98.23-3.3-.69-2.78-1.1-4.55-3.95-4.69-4.13-.14-.18-1.12-1.49-1.12-2.85s.71-2.02.97-2.3c.25-.27.55-.34.73-.34h.53c.17 0 .4-.06.62.48.24.56.8 1.94.87 2.08.07.14.12.3.02.48-.1.18-.14.3-.28.46-.14.16-.29.36-.42.48-.14.14-.28.29-.12.57.16.27.72 1.19 1.55 1.93 1.07.95 1.97 1.25 2.25 1.39.27.14.44.12.6-.07.16-.18.69-.8.87-1.08.18-.27.37-.23.62-.14.25.09 1.6.76 1.88.9.27.14.46.2.53.32.07.12.07.68-.17 1.36z"/></svg><span>Consultar uma data</span></a>
+  </div>
+</div></section><section class="sec"><div class="wrap">
+  <h2>Outras fitas</h2>
+  <ul class="fitas"><li><a class="fita" href="passeios-no-mar.html" style="--c:#4FB3E0"><span><b>No mar</b><span>Recife de Fora, Praia do Espelho e Poço Azul</span></span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li><li><a class="fita" href="cultura-e-historia.html" style="--c:#E86FA8"><span><b>Cultura e história</b><span>Reserva da Jaqueira, Rota do Descobrimento</span></span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li><li><a class="fita" href="aventura.html" style="--c:#3DAA62"><span><b>Aventura</b><span>Trancoso Off-Road</span></span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li><li><a class="fita" href="roteiros-combinados.html" style="--c:#E8553A"><span><b>Três lugares num dia</b><span>Litoral Sul num dia, Espelho e Trancoso</span></span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li></ul>
+</div></section>
+</main>
+<footer class="rodape">
+  <div class="wrap">
+    <div>
+      <a class="marca" href="index.html">KAIK TOUR</a>
+      <p style="margin-top:10px">Passeios privativos em Porto Seguro, Arraial d’Ajuda, Trancoso e Caraíva, com guia de turismo e saída da porta do hotel.</p>
+      <p style="margin-top:12px"><a href="https://www.google.com/maps/place/?q=place_id:ChIJhcbugM6TNgcRxjyFIVZ4jSE" target="_blank" rel="noopener">Nota 4,9 no Google, com 332 avaliações</a></p>
+    </div>
+    <div><h2>Passeios</h2><ul><li><a href="index.html">Início</a></li><li><a href="praias-e-vilarejos.html">Praias e vilarejos</a></li><li><a href="passeios-no-mar.html">No mar</a></li><li><a href="cultura-e-historia.html">Cultura</a></li><li><a href="aventura.html">Aventura</a></li><li><a href="roteiros-combinados.html">Combinados</a></li></ul></div>
+    <div>
+      <h2>Contato</h2>
+      <ul>
+        <li><a href="https://wa.me/5573988477235" target="_blank" rel="noopener">WhatsApp (73) 98847-7235</a></li>
+        <li><a href="https://www.google.com/maps/place/?q=place_id:ChIJhcbugM6TNgcRxjyFIVZ4jSE" target="_blank" rel="noopener">Av. 22 de Abril, 186, loja 14, Porto Seguro</a></li>
+      </ul>
+      <p style="margin-top:14px;font-size:14.5px">Valores e datas pelo WhatsApp.</p>
+      
+    </div>
+  </div>
+</footer>
+<script>
+/* ===================== CONFIG: dados editáveis ===================== */
+const CONFIG = {
+  whatsapp: "5573988477235",          // número do dono, só dígitos, com 55 e DDD
+  nome: "Kaik Tour",
+  google: "https://www.google.com/maps/place/?q=place_id:ChIJhcbugM6TNgcRxjyFIVZ4jSE"
+};
+/* ===================== INTEGRACOES: tudo DESLIGADO na prévia =====================
+   Ligar só no site de quem fechou, e SÓ depois do banner de consentimento (regra 8 / LGPD).
+   Guia: 0-Metodo-e-Modelos/INTEGRACOES-LEIA-ME.txt */
+const INTEGRACOES = { ga4: "", pixel: "", formspree: "", agenda: "" };
+/* ======================================================================= */
+(function(){
+  var abrir=document.querySelector('.abrir'), gav=document.getElementById('gaveta'), fechar=gav.querySelector('.fechar');
+  var atras=document.querySelectorAll('.topo,main,.rodape,footer,.pular');
+  function trava(on){atras.forEach(function(el){if(on)el.setAttribute('inert','');else el.removeAttribute('inert');});}
+  function abre(){gav.hidden=false;trava(true);abrir.setAttribute('aria-expanded','true');document.body.style.overflow='hidden';fechar.focus();}
+  function fecha(){gav.hidden=true;trava(false);abrir.setAttribute('aria-expanded','false');document.body.style.overflow='';abrir.focus();}
+  abrir.addEventListener('click',abre); fechar.addEventListener('click',fecha);
+  gav.addEventListener('click',function(e){if(e.target.closest('a'))fecha();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!gav.hidden)fecha();});
+})();
+</script>
+</body>
+</html>
